@@ -21,6 +21,5 @@ function inkshop_user_accounts_menu_default_menu_custom() {
   t('Benutzer Menu');
   t('Zeigt persönliche Links zum Konto, Warenkorb und zur Anmeldung');
 
-
   return $menus;
 }
