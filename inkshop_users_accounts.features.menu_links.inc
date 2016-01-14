@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * inkshop_user_accounts.features.menu_links.inc
+ * inkshop_users_accounts.features.menu_links.inc
  */
 
 /**
  * Implements hook_menu_default_menu_links().
  */
-function inkshop_user_accounts_menu_default_menu_links() {
+function inkshop_users_accounts_menu_default_menu_links() {
   $menu_links = array();
 
   // Exported menu link: menu-benutzer-menu_abmelden:user/logout.

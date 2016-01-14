@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * inkshop_user_accounts.strongarm.inc
+ * inkshop_users_accounts.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function inkshop_user_accounts_strongarm() {
+function inkshop_users_accounts_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
@@ -36,7 +36,7 @@ user/*/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'commerce_wishlist_element';
-  $strongarm->value = 'button';
+  $strongarm->value = 'link';
   $export['commerce_wishlist_element'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -52,15 +52,8 @@ user/*/*';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'commerce_wishlist_remove_product';
-  $strongarm->value = 1;
-  $export['commerce_wishlist_remove_product'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'commerce_wishlist_weight';
-  $strongarm->value = '0';
+  $strongarm->value = '50';
   $export['commerce_wishlist_weight'] = $strongarm;
 
   $strongarm = new stdClass();

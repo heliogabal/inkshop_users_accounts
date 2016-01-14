@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * inkshop_user_accounts.features.menu_custom.inc
+ * inkshop_users_accounts.features.menu_custom.inc
  */
 
 /**
  * Implements hook_menu_default_menu_custom().
  */
-function inkshop_user_accounts_menu_default_menu_custom() {
+function inkshop_users_accounts_menu_default_menu_custom() {
   $menus = array();
 
   // Exported menu: menu-benutzer-menu.

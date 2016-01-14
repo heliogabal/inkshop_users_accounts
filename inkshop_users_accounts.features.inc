@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * inkshop_user_accounts.features.inc
+ * inkshop_users_accounts.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function inkshop_user_accounts_ctools_plugin_api($module = NULL, $api = NULL) {
+function inkshop_users_accounts_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,6 +16,6 @@ function inkshop_user_accounts_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function inkshop_user_accounts_views_api($module = NULL, $api = NULL) {
+function inkshop_users_accounts_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
